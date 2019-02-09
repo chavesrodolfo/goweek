@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "f43c30fe-d2b8-4d2e-bb32-43f2246d1d82",
+		"name": "Goweek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Tweets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Tweets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"author\": \"Rodolfo\",\n\t\"content\":\"meu tweet\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tweets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tweets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Like",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/likes/5c5c2ffdfdaa5616c6880b24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"likes",
+						"5c5c2ffdfdaa5616c6880b24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
